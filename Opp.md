@@ -1,4 +1,4 @@
-# End‑to‑End Audit Data Flow & AI Opportunity Map
+[# End‑to‑End Audit Data Flow & AI Opportunity Map
 
 ## 1. High‑Level Flow Diagram
 ```
@@ -152,3 +152,4 @@ gantt
 ---
 
 *Feel free to adjust scores or add owners/cost columns.  High‑impact, low‑effort cells (Impact 3, Effort 1‑2) are your quick‑win backlog.*
+](https://github.com/Deloitte-Australia/personal/blob/main/AuditOpp.md)
