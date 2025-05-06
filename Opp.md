@@ -1,3 +1,32 @@
+
+# End‑to‑End Audit Data Flow & AI Opportunity Map
+
+## 1. High‑Level Flow Diagram
+```
+Client            Deloitte            Core Audit Repositories             Analytics Engines                Authoring & Archive
+Upload  ───►  Connect  ──►  EMS 4.x / Levia ──►  Omnia  ──►  Reveal → Cortex → Argus ──►  Word / Excel  ──►  Vault & BI
+                  ▲                           │                                                  │
+                  │                           └─►  Nightly / Realtime Bridge (2025)  ◄────────────┘
+                  └─►  Direct Push (future)      
+```
+*Solid arrows = live today  |  Dashed arrows = future‑state once EMS is retired.*
+
+---
+
+## 2. Detailed Stage‑by‑Stage View
+
+| # | Stage                        | Primary Systems                                | Data Assets                        | Pain‑Points / Latencies                    | AI / Automation Opportunity                                |
+|---|------------------------------|-----------------------------------------------|------------------------------------|--------------------------------------------|------------------------------------------------------------|
+| 1 | **Client Upload**            | Deloitte Connect                               | Source files, PBC metadata         | Manual tagging, inconsistent request names | NLP tagger that auto‑builds PBC requests & metadata.       |
+| 2 | **Initial Sync (15‑30 min)** | EMS “PBC” folder, Levia S3, AU Gateway         | Working copy, archive copy         | Duplicate storage; polling‑based sync      | Event‑driven pipeline; dedup & conflict‑detect.            |
+| 3 | **Bridge to Omnia**          | Omnia Source Docs (nightly → realtime)         | Consolidated evidence library      | Batch lag; EMS dependency                  | Direct push API; instant analytics trigger.                |
+| 4 | **Analytics Chain**          | Reveal → Cortex → Argus                        | Profiling stats, risk flags        | Multiple ETL hops                          | Unified GenAI engine; auto‑explain flags in plain English. |
+| 5 | **Authoring Plugins**        | Omnia Word/Excel, Excel Analytics, DataSnipper | Live evidence & analytics extracts | Manual refresh & cache mgmt                | Auto‑refresh; AI‑suggested citations.                      |
+| 6 | **Close‑out & Archive**      | Vault (CM‑9)                                   | Sealed engagement package          | Manual trigger delays                      | Predictive “ready‑to‑close” indicator; auto‑archive.       |
+| 7 | **Reporting**                | Extended Reporting Data → Power BI, QlikView   | Engagement KPIs                    | Siloed dashboards                          | LLM summariser; proactive SLA alerts.                      |
+
+---
+
 # Consolidated Audit‑Tech & AI Opportunity Matrix  🗂️
 
 A single view that merges **AI Opportunities**, **Deployment Status**, and **Digital Audit Enablers**.  Use the filters (or Ctrl/⌘‑F) to slice by category, audit phase, or deployment readiness.
@@ -53,3 +82,7 @@ A single view that merges **AI Opportunities**, **Deployment Status**, and **Dig
 > • Cells in **bold** denote confirmed production use in AU.
 
 Feel free to request a prioritised view (e.g., Quick‑wins quadrant) or cost/ROI overlays.
+
+
+
+ 
