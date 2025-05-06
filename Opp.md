@@ -82,37 +82,25 @@ Each table now includes a new **“Audit Use / Outcome”** column that boils do
 
 ---
 
-### Phase‑Coverage Mermaid (High‑Impact ≥3)
+## 7. System → Audit Phase Quick Map 🗺️
 
-```mermaid
-flowchart TB
-  subgraph Acceptance
-    ACMS -- impact3 --> Independence
-  end
-  subgraph Planning_Risk
-    Omnia
-    SmartReview
-    InsightsPortal
-    ResearchPortal
-  end
-  subgraph Fieldwork
-    Omnia --> DocAI --> Argus
-  end
-  subgraph Substantive
-    DigitalConfirmation
-    DataSnipper
-  end
-  subgraph Reporting
-    ResearchPortal --> VaultBI
-  end
-```
+*(High‑level grouping for at‑a‑glance coverage)*
 
-*Nodes shown are only those with **Impact 3**.*
+| Audit Phase                      | Key Systems (Primary)                                                                                                                |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Acceptance & Onboarding**      | Deloitte Connect · ACMS · Independence & Conflicts (GIDS)                                                                            |
+| **Planning & Risk Assessment**   | Research Portal · Audit Insights Portal · Dayshape · Process X‑ray                                                                   |
+| **Internal Controls Evaluation** | ACTT · QAP · Smart Review                                                                                                            |
+| **Substantive Testing**          | Omnia · Levvia · DataSnipper · Digital Confirmation · Document AI / Argus · Reveal Analytics · Omnia DNAV · InsightBox · Asset Count |
+| **Completion & Opinion**         | Digital Checklist · Scribe · Tie‑out · DataSnipper FSS                                                                               |
+| **Reporting & Sign‑off**         | Vault & BI · Omnia Data · Extended Reporting Data · Power BI Dashboards · QlikView                                                   |
+
+> *Use this map when you need a fast answer to “Which tools support phase X?” without scanning every table.*
 
 ---
 
-### Next Actions
 
-1. **Sort by Impact/Effort** to carve quick‑win backlog.
-2. **Assign owners** per system for feasibility validation.
-3. **Kick off POC** for DocAI, Smart Review, and Independence API.
+
+*Shows the primary flow of documents and analytics outputs across the audit lifecycle.*
+
+---
