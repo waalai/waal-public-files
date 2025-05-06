@@ -13,6 +13,20 @@ Upload  ───►  Connect  ──►  EMS 4.x / Levia ──►  Omnia  ─�
 ---
 
 
+## End‑to‑End Data Flow & AI Opportunities  🚚
+
+| # | Flow Stage    | Systems                        | Pain‑Point         | AI / Automation Fix          |
+| - | ------------- | ------------------------------ | ------------------ | ---------------------------- |
+| 1 | Client upload | Deloitte Connect               | Manual PBC tagging | NLP auto‑tagger              |
+| 2 | Sync          | EMS / Levia                    | Polling, dupes     | Event‑driven dedup           |
+| 3 | Bridge        | Omnia                          | Nightly lag        | Direct push                  |
+| 4 | Analytics     | Reveal → Cortex → Argus        | Multi‑hop ETL      | Unified GenAI + explanations |
+| 5 | Authoring     | Word / Excel + local analytics | Manual refresh     | Auto‑cite & refresh          |
+| 6 | Archive       | Vault                          | Manual trigger     | Predictive close             |
+| 7 | Reporting     | Power BI / QlikView            | Siloed dashboards  | LLM unified KPI feed         |
+
+
+
 # Audit‑Tech & AI Opportunities – Segmented View
 
 Use this version when you need to focus on **one pillar at a time**.  Each category now has its own table – easier to scan, export, or assign owners.
@@ -116,17 +130,5 @@ Use this version when you need to focus on **one pillar at a time**.  Each c
 *The End‑to‑End Data Flow Map remains unchanged below for reference.*
 
 ---
-
-## End‑to‑End Data Flow & AI Opportunities  🚚
-
-| # | Flow Stage    | Systems                        | Pain‑Point         | AI / Automation Fix          |
-| - | ------------- | ------------------------------ | ------------------ | ---------------------------- |
-| 1 | Client upload | Deloitte Connect               | Manual PBC tagging | NLP auto‑tagger              |
-| 2 | Sync          | EMS / Levia                    | Polling, dupes     | Event‑driven dedup           |
-| 3 | Bridge        | Omnia                          | Nightly lag        | Direct push                  |
-| 4 | Analytics     | Reveal → Cortex → Argus        | Multi‑hop ETL      | Unified GenAI + explanations |
-| 5 | Authoring     | Word / Excel + local analytics | Manual refresh     | Auto‑cite & refresh          |
-| 6 | Archive       | Vault                          | Manual trigger     | Predictive close             |
-| 7 | Reporting     | Power BI / QlikView            | Siloed dashboards  | LLM unified KPI feed         |
 
 
